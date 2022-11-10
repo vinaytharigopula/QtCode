@@ -31,10 +31,12 @@ win32 {
 
 SOURCES += \
         main.cpp \
-        MainWindow.cpp
+        MainWindow.cpp \
+        readSymbolData.cpp
 
 HEADERS += \
-        MainWindow.h
+        MainWindow.h \
+        readSymbolData.h
 
 FORMS += \
         MainWindow.ui
