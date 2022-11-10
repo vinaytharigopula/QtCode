@@ -7,6 +7,7 @@ ReadSupportFileData::ReadSupportFileData(QObject *parent) : QObject(parent)
 
 void ReadSupportFileData::readFileData(){
     QString Path="./MyResource/s57data_5_6_2/S52RAZDS.RLE";
+    //Path="./MyResource/s57data_5_6_2/asymrefs.dic";
     QFile file(Path);
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
         return;
@@ -24,6 +25,7 @@ void ReadSupportFileData::readFileData(){
 
     while (!file.atEnd()) {
         QByteArray line = file.readLine();
+        //qDebug()<<line;
         processLine(line);
     }
 
@@ -93,10 +95,21 @@ void ReadSupportFileData::categoriseLookUpTableData(QStringList list){
         QString type=Data.mid(31,Data.length());
         if(type.contains("PLAIN_BOUNDARIES")){//PLAIN_BOUNDARIES or asymrefs.dic
             prepareListFor_PlainBoundaries(list);
+        }else if(type.contains("SYMBOLIZED_BOUNDARIES")){//SYMBOLIZED_BOUNDARIES or asymreft.dic
+
+        }else if(type.contains("LINES")){//LINES or lsymrefs.dic
+
+        }else if(type.contains("SIMPLIFIED")){//SIMPLIFIED or psymrefs.dic
+
+        }else if(type.contains("PAPER_CHART")){//PAPER_CHART or psymreft.dic
+
         }
     }
 }
 
+/*****
+ * Logic for Look Up Table
+*****/
 void ReadSupportFileData::prepareListFor_PlainBoundaries(QStringList list){
     //PLAIN_BOUNDARIES
     QString Data="";
@@ -174,7 +187,7 @@ void ReadSupportFileData::prepareListFor_PlainBoundaries(QStringList list){
     }
 }
 
-
+/********************************************/
 
 
 
