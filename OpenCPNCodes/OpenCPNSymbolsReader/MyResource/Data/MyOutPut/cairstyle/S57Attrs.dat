@@ -1,0 +1,309 @@
+1,AGENCY,A,F,Agency responsible for production
+2,BCNSHP,E,F,Beacon shape
+3,BUISHP,E,F,Building shape
+4,BOYSHP,E,F,Buoy shape
+5,BURDEP,F,F,Buried depth
+6,CALSGN,S,F,Call sign
+7,CATAIR,L,F,Category of airport/airfield
+8,CATACH,L,F,Category of anchorage
+9,CATBRG,L,F,Category of bridge
+10,CATBUA,E,F,Category of built-up area
+11,CATCBL,E,F,Category of cable
+12,CATCAN,E,F,Category of canal
+13,CATCAM,E,F,Category of cardinal mark
+14,CATCHP,E,F,Category of checkpoint
+15,CATCOA,E,F,Category of coastline
+16,CATCTR,E,F,Category of control point
+17,CATCON,E,F,Category of conveyor
+18,CATCOV,E,F,Category of coverage
+19,CATCRN,E,F,Category of crane
+20,CATDAM,E,F,Category of dam
+21,CATDIS,E,F,Category of distance mark
+22,CATDOC,E,F,Category of dock
+23,CATDPG,L,F,Category of dumping ground
+24,CATFNC,E,F,Category of fence/wall
+25,CATFRY,E,F,Category of ferry
+26,CATFIF,E,F,Category of fishing facility
+27,CATFOG,E,F,Category of fog signal
+28,CATFOR,E,F,Category of fortified structure
+29,CATGAT,E,F,Category of gate
+30,CATHAF,L,F,Category of harbour facility
+31,CATHLK,L,F,Category of hulk
+32,CATICE,E,F,Category of ice
+33,CATINB,E,F,Category of installation buoy
+34,CATLND,L,F,Category of land region
+35,CATLMK,L,F,Category of landmark
+36,CATLAM,E,F,Category of lateral mark
+37,CATLIT,L,F,Category of light
+38,CATMFA,E,F,Category of marine farm/culture
+39,CATMPA,L,F,Category of military practice area
+40,CATMOR,E,F,Category of mooring/warping facility
+41,CATNAV,E,F,Category of navigation line
+42,CATOBS,E,F,Category of obstruction
+43,CATOFP,L,F,Category of offshore platform
+44,CATOLB,E,F,Category of oil barrier
+45,CATPLE,E,F,Category of pile
+46,CATPIL,E,F,Category of pilot boarding place
+47,CATPIP,L,F,Category of pipeline / pipe
+48,CATPRA,E,F,Category of production area
+49,CATPYL,E,F,Category of pylon
+50,CATQUA,E,F,Category of quality of data
+51,CATRAS,E,F,Category of radar station
+52,CATRTB,E,F,Category of radar transponder beacon
+53,CATROS,L,F,Category of radio station
+54,CATTRK,E,F,Category of recommended track
+55,CATRSC,L,F,Category of rescue station
+56,CATREA,L,F,Category of restricted area
+57,CATROD,E,F,Category of road
+58,CATRUN,E,F,Category of runway
+59,CATSEA,E,F,Category of sea area
+60,CATSLC,E,F,Category of shoreline construction
+61,CATSIT,L,F,Category of signal station - traffic
+62,CATSIW,L,F,Category of signal station - warning
+63,CATSIL,E,F,Category of silo/tank
+64,CATSLO,E,F,Category of slope
+65,CATSCF,L,F,Category of small craft facility
+66,CATSPM,L,F,Category of special purpose mark
+67,CATTSS,E,F,Category of Traffic Separation Scheme
+68,CATVEG,L,F,Category of vegetation
+69,CATWAT,E,F,Category of water turbulence
+70,CATWED,E,F,Category of weed/kelp
+71,CATWRK,E,F,Category of wreck
+72,CATZOC,E,F,Category of zone of confidence data
+73,$SPACE,E,$,Character spacing
+74,$CHARS,A,$,Character specification
+75,COLOUR,L,F,Colour
+76,COLPAT,L,F,Colour pattern
+77,COMCHA,A,F,Communication channel
+78,$CSIZE,F,$,Compass size
+79,CPDATE,A,F,Compilation date
+80,CSCALE,I,F,Compilation scale
+81,CONDTN,E,F,Condition
+82,CONRAD,E,F,Conspicuous - Radar
+83,CONVIS,E,F,Conspicuous - Visual
+84,CURVEL,F,F,Current velocity
+85,DATEND,A,F,Date end
+86,DATSTA,A,F,Date start
+87,DRVAL1,F,F,Depth range value 1
+88,DRVAL2,F,F,Depth range value 2
+89,DUNITS,E,F,Depth units
+90,ELEVAT,F,F,Elevation
+91,ESTRNG,F,F,Estimated range of transmission
+92,EXCLIT,E,F,Exhibition condition of light
+93,EXPSOU,E,F,Exposition of sounding
+94,FUNCTN,L,F,Function
+95,HEIGHT,F,F,Height
+96,HUNITS,E,F,Height/length units
+97,HORACC,F,F,Horizontal accuracy
+98,HORCLR,F,F,Horizontal clearance
+99,HORLEN,F,F,Horizontal length
+100,HORWID,F,F,Horizontal width
+101,ICEFAC,F,F,Ice factor
+102,INFORM,S,F,Information
+103,JRSDTN,E,F,Jurisdiction
+104,$JUSTH,E,$,Justification - horizontal
+105,$JUSTV,E,$,Justification - vertical
+106,LIFCAP,F,F,Lifting capacity
+107,LITCHR,E,F,Light characteristic
+108,LITVIS,L,F,Light visibility
+109,MARSYS,E,F,Marks navigational - System of
+110,MLTYLT,I,F,Multiplicity of lights
+111,NATION,A,F,Nationality
+112,NATCON,L,F,Nature of construction
+113,NATSUR,L,F,Nature of surface
+114,NATQUA,L,F,Nature of surface - qualifying terms
+115,NMDATE,A,F,Notice to Mariners date
+116,OBJNAM,S,F,Object name
+117,ORIENT,F,F,Orientation
+118,PEREND,A,F,Periodic date end
+119,PERSTA,A,F,Periodic date start
+120,PICREP,S,F,Pictorial representation
+121,PILDST,S,F,Pilot district
+122,PRCTRY,A,F,Producing country
+123,PRODCT,L,F,Product
+124,PUBREF,S,F,Publication reference
+125,QUASOU,L,F,Quality of sounding measurement
+126,RADWAL,A,F,Radar wave length
+127,RADIUS,F,F,Radius
+128,RECDAT,A,F,Recording date
+129,RECIND,A,F,Recording indication
+130,RYRMGV,A,F,Reference year for magnetic variation
+131,RESTRN,L,F,Restriction
+132,SCAMAX,I,F,Scale maximum
+133,SCAMIN,I,F,Scale minimum
+134,SCVAL1,I,F,Scale value one
+135,SCVAL2,I,F,Scale value two
+136,SECTR1,F,F,Sector limit one
+137,SECTR2,F,F,Sector limit two
+138,SHIPAM,A,F,Shift parameters
+139,SIGFRQ,I,F,Signal frequency
+140,SIGGEN,E,F,Signal generation
+141,SIGGRP,A,F,Signal group
+142,SIGPER,F,F,Signal period
+143,SIGSEQ,A,F,Signal sequence
+144,SOUACC,F,F,Sounding accuracy
+145,SDISMX,I,F,Sounding distance - maximum
+146,SDISMN,I,F,Sounding distance - minimum
+147,SORDAT,A,F,Source date
+148,SORIND,A,F,Source indication
+149,STATUS,L,F,Status
+150,SURATH,S,F,Survey authority
+151,SUREND,A,F,Survey date - end
+152,SURSTA,A,F,Survey date - start
+153,SURTYP,L,F,Survey type
+154,$SCALE,F,$,Symbol scaling factor
+155,$SCODE,A,$,Symbolization code
+156,TECSOU,L,F,Technique of sounding measurement
+157,$TXSTR,S,$,Text string
+158,TXTDSC,S,F,Textual description
+159,TS_TSP,A,F,Tidal stream - panel values
+160,TS_TSV,A,F,Tidal stream current - time series values
+161,T_ACWL,E,F,Tide - accuracy of water level
+162,T_HWLW,A,F,Tide - high and low water values
+163,T_MTOD,E,F,Tide - method of tidal prediction
+164,T_THDF,A,F,Tide - time and height differences
+165,T_TINT,I,F,Tide current - time interval of values
+166,T_TSVL,A,F,Tide - time series values
+167,T_VAHC,A,F,Tide - value of harmonic constituents
+168,TIMEND,A,F,Time end
+169,TIMSTA,A,F,Time start
+170,$TINTS,E,$,Tint
+171,TOPSHP,E,F,Topmark/daymark shape
+172,TRAFIC,E,F,Traffic flow
+173,VALACM,F,F,Value of annual change in magnetic variation
+174,VALDCO,F,F,Value of depth contour
+175,VALLMA,F,F,Value of local magnetic anomaly
+176,VALMAG,F,F,Value of magnetic variation
+177,VALMXR,F,F,Value of maximum range
+178,VALNMR,F,F,Value of nominal range
+179,VALSOU,F,F,Value of sounding
+180,VERACC,F,F,Vertical accuracy
+181,VERCLR,F,F,Vertical clearance
+182,VERCCL,F,F,Vertical clearance - closed
+183,VERCOP,F,F,Vertical clearance - open
+184,VERCSA,F,F,Vertical clearance - safe
+185,VERDAT,E,F,Vertical datum
+186,VERLEN,F,F,Vertical length
+187,WATLEV,E,F,Water level effect
+188,CAT_TS,E,F,Category of Tidal stream
+189,PUNITS,E,F,Positional accuracy units
+190,CLSDEF,S,$,Object class definition
+191,CLSNAM,S,$,Object class name
+192,SYMINS,S,$,Symbol instruction
+300,NINFOM,S,N,Information in national language
+301,NOBJNM,S,N,Object name in national language
+302,NPLDST,S,N,Pilot district in national language
+303,$NTXST,S,N,Text string in national language
+304,NTXTDS,S,N,Textual description in national language
+400,HORDAT,E,S,Horizontal datum
+401,POSACC,F,S,Positional Accuracy
+402,QUAPOS,E,S,Quality of position
+17000,catach,L,F,Category of anchorage
+17001,catdis,E,F,Category of distance mark
+17002,catsit,L,F,Category of signal station. traffic
+17003,catsiw,L,F,Category of signal station. warning
+17004,restrn,L,F,Restriction
+17005,verdat,E,F,Vertical datum
+17006,catbrg,L,F,Category of bridge
+17007,catfry,E,F,Category of ferry
+17008,cathaf,L,F,Category of harbour facility
+17009,marsys,E,F,Marks navigational - System of
+17010,catchp,L,F,Category of checkpoint
+17011,catlam,E,F,Category of lateral mark
+17012,catslc,E,F,Category of shoreline construction
+17050,addmrk,L,F,additional mark
+17051,catbnk,E,F,Category of bank
+17052,catnmk,E,F,category of notice mark
+17055,clsdng,E,F,class of dangerous cargo
+17056,dirimp,L,F,direction of impact
+17057,disbk1,F,F,Distance from notice mark. first
+17058,disbk2,F,F,Distance from notice mark. second
+17059,disipu,F,F,Distance of impact. upstream
+17060,disipd,F,F,Distance of impact. downstream
+17061,eleva1,F,F,Elevation 1 of surface (m)
+17062,eleva2,F,F,Elevation 2 of surface (m)
+17063,fnctnm,E,F,Function of notice mark
+17064,wtwdis,F,F,waterway distance
+17065,bunves,E,F,bunker vessel. availability
+17066,catbrt,L,F,category of berth
+17067,catbun,L,F,category of bunker station
+17068,catccl,L,F,category of CEMT class
+17069,catcom,L,F,Category of communication
+17070,cathbr,L,F,category of harbour area
+17071,catrfd,L,F,category of refuse dump
+17072,cattml,L,F,Category of terminal
+17073,comctn,S,F,Communication
+17074,horcll,F,F,Horizontal clearance length
+17075,horclw,F,F,Horizontal clearance width
+17076,trshgd,L,F,transshipping goods
+17077,unlocd,S,F,UN location code
+17078,catgag,L,F,Category of waterway gauge
+17080,higwat,F,F,Value at relevant high water level
+17081,hignam,S,F,Name of relevant high water level
+17082,lowwat,F,F,Value at relevant low water level
+17083,lownam,S,F,Name of relevant low water level
+17084,meawat,F,F,Value at relevant mean water level
+17085,meanam,S,F,Name of relevant mean water level
+17086,othwat,F,F,Value at other locally relevant water level
+17087,othnam,S,F,Name of other locally relevant water level
+17088,reflev,E,F,Reference gravitational level
+17089,sdrlev,S,F,Name of Sounding datum reference level
+17090,vcrlev,S,F,Name of vertical river datum reference level
+17091,catvtr,L,F,Category of vehicle transfer
+17092,cattab,E,F,Category of time and behaviour
+17093,schref,S,F,Time Schedule Reference
+17094,useshp,E,F,Use of Ship
+17095,curvhw,F,F,Current velocity at high water level
+17096,curvlw,F,F,Current velocity at low water level
+17097,curvmw,F,F,Current velocity at mean water level
+17098,curvow,F,F,Current velocity at other water level
+17099,aptref,S,F,Average Passing Time Reference
+17100,catexs,E,F,Category of exceptional structure
+17101,catcbl,E,F,Category of cable
+17102,cathlk,L,F,Category of hulk
+17103,hunits,E,F,Height/length units
+17104,watlev,E,F,Water level effect
+17112,catwwm,E,F,Category of waterway mark
+18001,lg_spd,F,F,Maximal permitted speed
+18002,lg_spr,L,F,speed reference
+18003,lg_bme,F,F,Maximal permitted beam
+18004,lg_lgs,F,F,Maximal permitted length
+18005,lg_drt,F,F,Maximal permitted draught
+18006,lg_wdp,F,F,Maximal permitted water displacement
+18007,lg_wdu,E,F,water displacement unit
+18008,lg_rel,L,F,related issue
+18009,lg_fnc,L,F,Function of legal conditions
+18010,lg_des,S,F,Description of legal conditions
+18011,lg_pbr,S,F,Publication reference
+18012,lc_csi,L,F,category of ship (including)
+18013,lc_cse,L,F,category of ship (excluding)
+18014,lc_asi,L,F,Assemblies of ship (including)
+18015,lc_ase,L,F,Assemblies of ship (excluding)
+18016,lc_cci,L,F,Category of cargo (including)
+18017,lc_cce,L,F,Category of cargo (excluding)
+18018,lc_bm1,F,F,Beam range value 1
+18019,lc_bm2,F,F,Beam range value 2
+18020,lc_lg1,F,F,Length range value 1
+18021,lc_lg2,F,F,Length range value 2
+18022,lc_dr1,F,F,Draught range value 1
+18023,lc_dr2,F,F,Draught range value 2
+18024,lc_sp1,F,F,Speed range value 1
+18025,lc_sp2,F,F,Speed range value 2
+18026,lc_wd1,F,F,Water displacement range value 1
+18027,lc_wd2,F,F,Water displacement value 2
+22031,ANATR1,S,F,Annotation Attribute 1
+22032,ANATR2,S,F,Annotation Attribute 2
+22033,ANATR3,S,F,Annotation Attribute 3
+22034,ANATR4,S,F,Annotation Attribute 4
+22035,ANATR5,S,F,Annotation Attribute 5
+22036,ANATR6,S,F,Annotation Attribute 6
+22037,ANATR7,S,F,Annotation Attribute 7
+22038,ANATR8,S,F,Annotation Attribute 8
+22039,ANATR9,S,F,Annotation Attribute 9
+22040,ANATRA,S,F,Annotation Attribute a
+22076,ANTXT1,S,F,Annotation Text
+22135,ANLYR1,S,F,Annotation Layer
+22227,NEWTY1,S,F,New type 1
+33066,shptyp,E,F,Type of Ship
+40000,updmsg,S,F,Update message
+50000,catgeo,E,F,Geometry Primitive Category

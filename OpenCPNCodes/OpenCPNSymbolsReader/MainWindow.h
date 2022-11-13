@@ -3,7 +3,10 @@
 
 #include <QMainWindow>
 
-#include "ReadSupportFilesData/ReadSupportFileData.h"
+#include "ReadSupportFiles/OpenCPN/ReadOpenCPNSupportFiles.h"
+
+#include "ReadSupportFiles/S57Support/ReadS57SupportFiles.h"
+#include "DrawLogic/DrawSymbols/S57DrawSymbols.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -17,9 +20,15 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void paintEvent(QPaintEvent *event) override;
 private:
     Ui::MainWindow *ui;
 
-    ReadSupportFileData readsupport;
+    ReadOpenCPNSupportFiles readCPNfile;
+
+    ReadS57SupportFiles s57files;
+    S57DrawSymbols *drwSymb;
+
 };
 #endif // MAINWINDOW_H

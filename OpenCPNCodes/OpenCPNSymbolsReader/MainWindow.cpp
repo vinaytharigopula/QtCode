@@ -7,11 +7,38 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    readsupport.readFileData();
+
+    //    readCPNfile.readOPENCPN_S57Data562_File();
+    //    readCPNfile.readOPENCPN_S57Attributes_File();
+    //    readCPNfile.readOPENCPN_S57ObjectClass_File();
+
+    s57files.readS57SymbolsFile();
+
+    //drwSymb
+    drwSymb= new S57DrawSymbols(this);
+    //drwSymb->setSymbolData(s57files.getS57Symbols());
+
+    //Widget *native = new Widget(&helper, this);
+    // S57DrawSymbols *native = new S57DrawSymbols(this);
+
+    //drwSymb->d
+
+
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::paintEvent(QPaintEvent *event)
+{
+
+    QPainter painter;
+    painter.begin(this);
+    painter.setRenderHint(QPainter::Antialiasing);
+    drwSymb->paint(event,&painter);
+    painter.end();
+
 }
 
