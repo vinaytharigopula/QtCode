@@ -8,6 +8,27 @@ S57DrawSymbols::S57DrawSymbols(QObject *parent) : QObject(parent)
     Pen2=QPen(Qt::red);
     Pen2.setWidth(2);
 
+    // example in psymreft if for a object name
+    // if instrctuion type =Type
+//    QString Type="";
+//    if (Type=="SY"){
+//        // em Symbol
+//    }else if(Type=="LC"){
+//        // Complex Line
+//    }else if(Type=="LS"){
+//        // Simple Line
+//    }else if(Type=="TE"){
+//        // Text
+//    }else if(Type=="TX"){
+//        // Text
+//    }else if(Type=="AP"){
+//        // Pattern
+//    }else if(Type=="AC"){
+//        // Color
+//    }else if(Type=="CS"){
+//        // Cond Procedure
+//    }
+
 }
 
 void S57DrawSymbols::setSymbolData(QMap<QString,QStringList> Data){
