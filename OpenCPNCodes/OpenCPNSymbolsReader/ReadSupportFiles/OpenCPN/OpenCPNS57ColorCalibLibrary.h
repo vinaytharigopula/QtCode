@@ -41,6 +41,7 @@ public slots:
     void setClrName(QString S);
     void setData(QString SymName,double r,double g,double b,QString ClrName);
 
+    void printData();
     void clear();
 private:
     QString SymName="";
@@ -80,6 +81,11 @@ public:
 
     QList<rgbPoint> getrgbPointList(){
         return rgbPointList;
+    }
+    void printrgbPointList(){
+        foreach (rgbPoint var, rgbPointList) {
+            var.printData();
+        }
     }
 
 private:

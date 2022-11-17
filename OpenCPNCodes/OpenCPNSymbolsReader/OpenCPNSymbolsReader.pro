@@ -17,6 +17,10 @@ SOURCES += \
     ReadSupportFiles/OpenCPN/ReadOpenCPNSupportFiles.cpp \
     ReadSupportFiles/OpenCPN/openCPNS57Attributes.cpp \
     ReadSupportFiles/S57Support/ReadS57SupportFiles.cpp \
+    ReadSupportFiles/V4S57SupportFiles/ReadV4S57SupportFiles.cpp \
+    ReadSupportFiles/V4S57SupportFiles/V4S57ColorCalibLib.cpp \
+    ReadSupportFiles/V4S57SupportFiles/V4S57LookUpTableLibrary.cpp \
+    ReadSupportFiles/V4S57SupportFiles/V4S57SymbolLibrary.cpp \
     main.cpp \
     MainWindow.cpp
 
@@ -29,7 +33,11 @@ HEADERS += \
     ReadSupportFiles/OpenCPN/OpenCPNS57SymbolLibrary.h \
     ReadSupportFiles/OpenCPN/ReadOpenCPNSupportFiles.h \
     ReadSupportFiles/OpenCPN/openCPNS57Attributes.h \
-    ReadSupportFiles/S57Support/ReadS57SupportFiles.h
+    ReadSupportFiles/S57Support/ReadS57SupportFiles.h \
+    ReadSupportFiles/V4S57SupportFiles/ReadV4S57SupportFiles.h \
+    ReadSupportFiles/V4S57SupportFiles/V4S57ColorCalibLib.h \
+    ReadSupportFiles/V4S57SupportFiles/V4S57LookUpTableLibrary.h \
+    ReadSupportFiles/V4S57SupportFiles/V4S57SymbolLibrary.h
 
 FORMS += \
     MainWindow.ui

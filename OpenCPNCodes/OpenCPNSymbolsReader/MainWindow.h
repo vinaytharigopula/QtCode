@@ -8,6 +8,8 @@
 #include "ReadSupportFiles/S57Support/ReadS57SupportFiles.h"
 #include "DrawLogic/DrawSymbols/S57DrawSymbols.h"
 
+#include "ReadSupportFiles/V4S57SupportFiles/ReadV4S57SupportFiles.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -28,6 +30,8 @@ private:
     ReadOpenCPNSupportFiles readCPNfile;
 
     ReadS57SupportFiles s57files;
+
+    ReadV4S57SupportFiles v4files;
     S57DrawSymbols *drwSymb;
 
 };

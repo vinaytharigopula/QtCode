@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_rgbPoint_t {
-    QByteArrayData data[20];
-    char stringdata0[152];
+    QByteArrayData data[21];
+    char stringdata0[162];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -50,14 +50,15 @@ QT_MOC_LITERAL(15, 111, 10), // "setClrName"
 QT_MOC_LITERAL(16, 122, 7), // "setData"
 QT_MOC_LITERAL(17, 130, 7), // "SymName"
 QT_MOC_LITERAL(18, 138, 7), // "ClrName"
-QT_MOC_LITERAL(19, 146, 5) // "clear"
+QT_MOC_LITERAL(19, 146, 9), // "printData"
+QT_MOC_LITERAL(20, 156, 5) // "clear"
 
     },
     "rgbPoint\0getSymName\0\0getRValue\0getGValue\0"
     "getBValue\0getClrName\0setSymName\0S\0"
     "setRValue\0r\0setGValue\0g\0setBValue\0b\0"
     "setClrName\0setData\0SymName\0ClrName\0"
-    "clear"
+    "printData\0clear"
 };
 #undef QT_MOC_LITERAL
 
@@ -67,7 +68,7 @@ static const uint qt_meta_data_rgbPoint[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-      12,   14, // methods
+      13,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -75,18 +76,19 @@ static const uint qt_meta_data_rgbPoint[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   74,    2, 0x0a /* Public */,
-       3,    0,   75,    2, 0x0a /* Public */,
-       4,    0,   76,    2, 0x0a /* Public */,
-       5,    0,   77,    2, 0x0a /* Public */,
-       6,    0,   78,    2, 0x0a /* Public */,
-       7,    1,   79,    2, 0x0a /* Public */,
-       9,    1,   82,    2, 0x0a /* Public */,
-      11,    1,   85,    2, 0x0a /* Public */,
-      13,    1,   88,    2, 0x0a /* Public */,
-      15,    1,   91,    2, 0x0a /* Public */,
-      16,    5,   94,    2, 0x0a /* Public */,
-      19,    0,  105,    2, 0x0a /* Public */,
+       1,    0,   79,    2, 0x0a /* Public */,
+       3,    0,   80,    2, 0x0a /* Public */,
+       4,    0,   81,    2, 0x0a /* Public */,
+       5,    0,   82,    2, 0x0a /* Public */,
+       6,    0,   83,    2, 0x0a /* Public */,
+       7,    1,   84,    2, 0x0a /* Public */,
+       9,    1,   87,    2, 0x0a /* Public */,
+      11,    1,   90,    2, 0x0a /* Public */,
+      13,    1,   93,    2, 0x0a /* Public */,
+      15,    1,   96,    2, 0x0a /* Public */,
+      16,    5,   99,    2, 0x0a /* Public */,
+      19,    0,  110,    2, 0x0a /* Public */,
+      20,    0,  111,    2, 0x0a /* Public */,
 
  // slots: parameters
     QMetaType::QString,
@@ -100,6 +102,7 @@ static const uint qt_meta_data_rgbPoint[] = {
     QMetaType::Void, QMetaType::Double,   14,
     QMetaType::Void, QMetaType::QString,    8,
     QMetaType::Void, QMetaType::QString, QMetaType::Double, QMetaType::Double, QMetaType::Double, QMetaType::QString,   17,   10,   12,   14,   18,
+    QMetaType::Void,
     QMetaType::Void,
 
        0        // eod
@@ -127,7 +130,8 @@ void rgbPoint::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         case 8: _t->setBValue((*reinterpret_cast< double(*)>(_a[1]))); break;
         case 9: _t->setClrName((*reinterpret_cast< QString(*)>(_a[1]))); break;
         case 10: _t->setData((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2])),(*reinterpret_cast< double(*)>(_a[3])),(*reinterpret_cast< double(*)>(_a[4])),(*reinterpret_cast< QString(*)>(_a[5]))); break;
-        case 11: _t->clear(); break;
+        case 11: _t->printData(); break;
+        case 12: _t->clear(); break;
         default: ;
         }
     }
@@ -162,13 +166,13 @@ int rgbPoint::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 12)
+        if (_id < 13)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 12;
+        _id -= 13;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 12)
+        if (_id < 13)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 12;
+        _id -= 13;
     }
     return _id;
 }

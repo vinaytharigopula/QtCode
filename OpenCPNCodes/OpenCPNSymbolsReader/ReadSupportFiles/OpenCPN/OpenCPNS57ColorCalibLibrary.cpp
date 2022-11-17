@@ -5,15 +5,15 @@
 rgbPoint::rgbPoint(QString SName, double R, double G, double B, QString ClrName) {
     this->SymName=SName;
     this->r=R;
-    this->r=G;
-    this->r=B;
+    this->g=G;
+    this->b=B;
     this->ClrName=ClrName;
 }
 rgbPoint::rgbPoint(const rgbPoint& t){
     this->SymName=t.SymName;
     this->r=t.r;
-    this->r=t.g;
-    this->r=t.b;
+    this->g=t.g;
+    this->b=t.b;
     this->ClrName=t.ClrName;
 }
 rgbPoint rgbPoint::operator=(const rgbPoint& t){
@@ -45,6 +45,10 @@ void rgbPoint::setData(QString SymName, double r, double g, double b, QString Cl
     this->g=g;
     this->b=b;
     this->ClrName=ClrName;
+}
+
+void rgbPoint::printData(){
+    qDebug()<<SymName<<r<<g<<b<<ClrName;
 }
 
 void rgbPoint::clear(){

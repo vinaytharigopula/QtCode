@@ -14,6 +14,8 @@ MainWindow::MainWindow(QWidget *parent)
 
     s57files.readS57SymbolsFile();
 
+    v4files.readVersion4_S57Data_File();
+
     //drwSymb
     drwSymb= new S57DrawSymbols(this);
     //drwSymb->setSymbolData(s57files.getS57Symbols());
