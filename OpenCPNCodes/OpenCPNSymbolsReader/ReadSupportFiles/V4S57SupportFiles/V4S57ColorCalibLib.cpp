@@ -86,7 +86,7 @@ void V4S57ColorCalibLib::writeDataIntoSupportFile(QString path, QString Name)
         //qDebug()<<i.key()<<rgnStr.getrgbPointList().size();
 
         foreach (rgbPoint var, rgnStr.getrgbPointList()) {
-            var.printData();
+            //var.printData();
         }
     }
 

@@ -584,6 +584,7 @@ debug\moc_MainWindow.cpp: MainWindow.h \
 		ReadSupportFiles\OpenCPN\openCPNS57Attributes.h \
 		ReadSupportFiles\OpenCPN\OpenCPNS57Objects.h \
 		ReadSupportFiles\S57Support\ReadS57SupportFiles.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\QPolygonF \
 		DrawLogic\DrawSymbols\S57DrawSymbols.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\QWidget \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\QPolygon \
@@ -1496,6 +1497,7 @@ debug\moc_ReadS57SupportFiles.cpp: ReadSupportFiles\S57Support\ReadS57SupportFil
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\QDebug \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\QVector \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\QStringList \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\QPolygonF \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\QMap \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\QFile \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\QTextStream \
@@ -3077,6 +3079,7 @@ debug\ReadS57SupportFiles.obj: ReadSupportFiles\S57Support\ReadS57SupportFiles.c
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\QDebug \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\QVector \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\QStringList \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\QPolygonF \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\QMap \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\QFile \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\QTextStream \
@@ -3758,6 +3761,7 @@ debug\main.obj: main.cpp MainWindow.h \
 		ReadSupportFiles\OpenCPN\openCPNS57Attributes.h \
 		ReadSupportFiles\OpenCPN\OpenCPNS57Objects.h \
 		ReadSupportFiles\S57Support\ReadS57SupportFiles.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\QPolygonF \
 		DrawLogic\DrawSymbols\S57DrawSymbols.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\QWidget \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\QPolygon \
@@ -3916,6 +3920,7 @@ debug\MainWindow.obj: MainWindow.cpp MainWindow.h \
 		ReadSupportFiles\OpenCPN\openCPNS57Attributes.h \
 		ReadSupportFiles\OpenCPN\OpenCPNS57Objects.h \
 		ReadSupportFiles\S57Support\ReadS57SupportFiles.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\QPolygonF \
 		DrawLogic\DrawSymbols\S57DrawSymbols.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\QWidget \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\QPolygon \
@@ -3926,20 +3931,7 @@ debug\MainWindow.obj: MainWindow.cpp MainWindow.h \
 		ReadSupportFiles\V4S57SupportFiles\V4S57ColorCalibLib.h \
 		ReadSupportFiles\V4S57SupportFiles\V4S57LookUpTableLibrary.h \
 		ReadSupportFiles\V4S57SupportFiles\V4S57SymbolLibrary.h \
-		ui_MainWindow.h \
-		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\QVariant \
-		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\QGridLayout \
-		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qgridlayout.h \
-		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qlayout.h \
-		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qlayoutitem.h \
-		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qboxlayout.h \
-		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\QMenuBar \
-		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qmenubar.h \
-		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qmenu.h \
-		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qaction.h \
-		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qactiongroup.h \
-		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\QStatusBar \
-		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qstatusbar.h
+		ui_MainWindow.h
 
 debug\moc_S57DrawSymbols.obj: debug\moc_S57DrawSymbols.cpp 
 
