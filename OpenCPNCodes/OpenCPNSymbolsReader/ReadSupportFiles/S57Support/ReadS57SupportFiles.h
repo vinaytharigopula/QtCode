@@ -125,17 +125,22 @@ typedef struct SymVectorData{
     ushort PenWidth=1;
     int radius=0;
     //type of the vector
-    ushort VecFill;	   /* 0 - No fill, 1 - filled       */
-    ushort VecType=0; /* 0-Line , 1 - Arc , 2-Circle, 3 - Poly , 4-Symbol */
+    ushort VecFill=0;	   /* 0 - No fill, 1 - filled       */
+    ushort VecType=0;  /* 0-Line , 1 - Arc , 2-Circle, 3 - Poly , 4-Symbol */
     ushort VecTransparent=0;
     QPointF PenUpPt;
     QPointF PenDownPt;
     QPolygonF PenDownPoly;
+    ushort TypeOfPoly=0; /* 0- none/Line , 1-polyline 2-polygon*/
 
     void clear(){
         VecColorIndex="";
         PenWidth=1;
         radius=0;
+        VecFill=0;
+        VecType=0;
+        TypeOfPoly=0;
+        VecTransparent=0;
         PenUpPt=QPointF(0,0);
         PenDownPt=QPointF(0,0);
         PenDownPoly.clear();
@@ -148,6 +153,7 @@ typedef struct SymVectorData{
         Temp.append(",radius:"+QString::number(radius));
         Temp.append(",VecFill:"+QString::number(VecFill));
         Temp.append(",VecType:"+QString::number(VecType));
+        Temp.append(",TypeOfPoly:"+QString::number(TypeOfPoly));
         Temp.append(",VecTransparent:"+QString::number(VecTransparent));
         Temp.append(",PenUpPt:("+QString::number(PenUpPt.x())+","+QString::number(PenUpPt.y())+")");
         Temp.append(",PenDownPt:("+QString::number(PenDownPt.x())+","+QString::number(PenDownPt.y())+")");
@@ -210,6 +216,7 @@ public:
 public slots:
     void readS57SymbolsFile();
     QMap<QString,QStringList> getS57Symbols();
+    QMap<QString,SymbolAllData> getS57InstructionData();
 signals:
 
 private slots:
@@ -217,7 +224,7 @@ private slots:
 
 
     void initialiseData(QString Sym, QStringList lst);
-    void processSymbolVectorData(QStringList DataList);
+    void processSymbolVectorData(QStringList DataList, bool multiplePd);
     void saveDataInSymbolData();
     void processSymbolIdentificationData(QString Data);
     void processSymbolExpositionData(QString Data);
@@ -227,12 +234,13 @@ private:
     QMap<QString,QStringList> SymbolData;
     QStringList List;
 
-    SymVectorData SymblVctrData;
+
 
     SymIdentification SymblIden;
     SymDefination SymblDef;
     SymDescription SymblDesc;
     SymColorRef SymblClrRef;
+    SymVectorData SymblVctrData;
 
     SymAllData SymblInstrnData;
     QVector<SymAllData> SymblInstrnDataVec;

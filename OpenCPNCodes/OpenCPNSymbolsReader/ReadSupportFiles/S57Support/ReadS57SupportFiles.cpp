@@ -3,9 +3,15 @@
 ReadS57SupportFiles::ReadS57SupportFiles(QObject *parent) : QObject(parent)
 {
     path="./MyResource/Data/MyOutPut/cairstyle";
+
+
 }
 QMap<QString,QStringList> ReadS57SupportFiles::getS57Symbols(){
     return SymbolData;
+}
+
+QMap<QString, SymbolAllData> ReadS57SupportFiles::getS57InstructionData(){
+    return SymbolInstrnDataMap;
 }
 
 
@@ -32,38 +38,6 @@ void ReadS57SupportFiles::readS57SymbolsFile(){
 
         processLineData(line);
     }
-
-//    //    qDebug()<<SymblInstrnDataVec.size();
-//        foreach (SymAllData sym, SymblInstrnDataVec) {
-//            SymAllData SymInstrnData=sym;
-//            //if(SymInstrnData.SymblDefn.SymbolFullName.contains(".SYM")){
-//                qDebug()<<SymInstrnData.printData();
-//                qDebug()<<"============================";
-//           // }
-//        }
-
-
-    qDebug()<<SymbolInstrnDataMap.size()<<"@@@@@@@@@@@@@@@@@@@@@@@";
-
-
-
-    QMapIterator<QString,SymbolAllData> i(SymbolInstrnDataMap);
-
-    SymAllData SymInstrnData;
-    while (i.hasNext()) {
-        i.next();
-
-
-        qDebug()<<i.key()<<"***********************";
-        SymInstrnData=i.value();
-        //if(SymInstrnData.SymblDefn.SymbolFullName.contains(".SYM")){
-
-
-        qDebug()<<SymInstrnData.printData();
-        qDebug()<<"============================";
-        // }
-    }
-
 
 }
 void ReadS57SupportFiles::processLineData(QString Data){
@@ -145,7 +119,12 @@ void ReadS57SupportFiles::initialiseData(QString Sym,QStringList lst){
             if(DList.last().length()<2){
                 DList.removeLast();
             }
-            processSymbolVectorData(DList);
+            bool MultiplePD=false;
+            if(MainData.count("PD")>1){
+                MultiplePD=true;
+                //qDebug()<<" Multiple PD"<<DList;
+            }
+            processSymbolVectorData(DList,MultiplePD);
             SymblInstrnData.SymblVectrDataVec.append(SymblVctrData);
         }
 
@@ -185,7 +164,11 @@ void ReadS57SupportFiles::initialiseData(QString Sym,QStringList lst){
             if(DList.last().length()<2){
                 DList.removeLast();
             }
-            processSymbolVectorData(DList);
+            bool MultiplePD=false;
+            if(MainData.count("PD")>1){
+                MultiplePD=true;
+            }
+            processSymbolVectorData(DList,MultiplePD);
             SymblInstrnData.SymblVectrDataVec.append(SymblVctrData);
         }
 
@@ -236,7 +219,11 @@ void ReadS57SupportFiles::initialiseData(QString Sym,QStringList lst){
             if(DList.last().length()<2){
                 DList.removeLast();
             }
-            processSymbolVectorData(DList);
+            bool MultiplePD=false;
+            if(MainData.count("PD")>1){
+                MultiplePD=true;
+            }
+            processSymbolVectorData(DList,MultiplePD);
             SymblInstrnData.SymblVectrDataVec.append(SymblVctrData);
         }
 
@@ -315,7 +302,7 @@ void ReadS57SupportFiles::processSymbolExpositionData(QString Data){
     SymblInstrnData.SymblDesc=SymblDesc;
 }
 
-void ReadS57SupportFiles::processSymbolVectorData(QStringList DataList){
+void ReadS57SupportFiles::processSymbolVectorData(QStringList DataList,bool multiplePd){
     //"SVCT   31SPA;SW1;PU1264,789;PD1264,1291;"
 
 
@@ -327,6 +314,9 @@ void ReadS57SupportFiles::processSymbolVectorData(QStringList DataList){
     //qDebug()<<DataList.size()<<DataList;
 
     foreach (QString var, DataList) {
+
+        //qDebug()<<" prev PenDownPt:"<<SymblVctrData.PenDownPt;
+
         if(var.contains("SP")){/* color of the symbol/Line/Area.*/
             SymblVctrData.VecColorIndex=var.mid(2,var.length());
         }
@@ -363,13 +353,18 @@ void ReadS57SupportFiles::processSymbolVectorData(QStringList DataList){
             }
         }
         if((var.length()>4)&&var.contains("PD")){ /* Pen Down */
+            //qDebug()<<var;
             Temp=var.mid(2,var.length());
             QStringList List;
             List=Temp.split(",");
             if(List.size()==2){
                 SymblVctrData.PenDownPt=QPointF(List.at(0).toDouble(),List.at(1).toDouble());
+
+                if(multiplePd){
+                    SymblVctrData.PenDownPoly.append(SymblVctrData.PenDownPt);
+                }
             }else if(List.size()>=2){
-                //qDebug()<<List.size()<<"++++++++++++++++++++++++++++++";
+                //qDebug()<<List.size()<<List<<"++++++++++++++++++++++++++++++";
                 for (int p=0;p<List.size();p+=2 ) {
                     //qDebug()<<List.at(p)<<List.at(p+1);
                     SymblVctrData.PenDownPoly.append(QPointF(List.at(p).toDouble(),List.at(p+1).toDouble()));

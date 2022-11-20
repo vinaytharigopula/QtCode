@@ -44,17 +44,17 @@ void ReadV4S57SupportFiles::readVersion4_S57Data_File(){
         processLineData(line);
     }
 
-    S57SymLib.writeVDataIntoSupportFile(path+"/MyOutPut/V4ToV3/cairstyle/",SymbolsVSupportFileName);
-    S57SymLib.writeRDataIntoSupportFile(path+"/MyOutPut/V4ToV3/cairstyle/",SymbolsRSupportFileName);
+//    S57SymLib.writeVDataIntoSupportFile(path+"/MyOutPut/V4ToV3/cairstyle/",SymbolsVSupportFileName);
+//    S57SymLib.writeRDataIntoSupportFile(path+"/MyOutPut/V4ToV3/cairstyle/",SymbolsRSupportFileName);
 
 
-    S57LukupTbleLib.writePlainBoundariesData(path+"/MyOutPut/V4ToV3/cairstyle/",plainBoundariesLukupTblFileName);
-    S57LukupTbleLib.writeSimplifiedData(path+"/MyOutPut/V4ToV3/cairstyle/",SimplifiedLukupTblFileName);
-    S57LukupTbleLib.writelinesData(path+"/MyOutPut/V4ToV3/cairstyle/",linesLukupTblFileName);
-    S57LukupTbleLib.writepaperChartData(path+"/MyOutPut/V4ToV3/cairstyle/",paperChartLukupTblFileName);
-    S57LukupTbleLib.writesymbolisedBoundaryData(path+"/MyOutPut/V4ToV3/cairstyle/",symbolisedBoundryLukupTblFileName);
+//    S57LukupTbleLib.writePlainBoundariesData(path+"/MyOutPut/V4ToV3/cairstyle/",plainBoundariesLukupTblFileName);
+//    S57LukupTbleLib.writeSimplifiedData(path+"/MyOutPut/V4ToV3/cairstyle/",SimplifiedLukupTblFileName);
+//    S57LukupTbleLib.writelinesData(path+"/MyOutPut/V4ToV3/cairstyle/",linesLukupTblFileName);
+//    S57LukupTbleLib.writepaperChartData(path+"/MyOutPut/V4ToV3/cairstyle/",paperChartLukupTblFileName);
+//    S57LukupTbleLib.writesymbolisedBoundaryData(path+"/MyOutPut/V4ToV3/cairstyle/",symbolisedBoundryLukupTblFileName);
 
-    S57ColorCalibLib.writeDataIntoSupportFile(path+"/MyOutPut/V4ToV3/cairstyle/",ColorCalibSupportFileName);
+//    S57ColorCalibLib.writeDataIntoSupportFile(path+"/MyOutPut/V4ToV3/cairstyle/",ColorCalibSupportFileName);
 
 }
 

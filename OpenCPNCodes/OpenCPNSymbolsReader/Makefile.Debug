@@ -433,6 +433,8 @@ debug\moc_S57DrawSymbols.cpp: DrawLogic\DrawSymbols\S57DrawSymbols.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\qpainter.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\qtextoption.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\qpen.h \
+		ReadSupportFiles\S57Support\ReadS57SupportFiles.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\QPolygonF \
 		debug\moc_predefs.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\bin\moc.exe
 	C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\bin\moc.exe $(DEFINES) --compiler-flavor=msvc --include C:/Users/vinay/OneDrive/Documents/GitHub/QtCode/OpenCPNCodes/OpenCPNSymbolsReader/debug/moc_predefs.h -IC:/Qt/Qt5.12.12/5.12.12/msvc2017_64/mkspecs/win32-msvc -IC:/Users/vinay/OneDrive/Documents/GitHub/QtCode/OpenCPNCodes/OpenCPNSymbolsReader -IC:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include -IC:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include/QtGui -IC:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt" DrawLogic\DrawSymbols\S57DrawSymbols.h -o debug\moc_S57DrawSymbols.cpp
@@ -544,6 +546,26 @@ debug\moc_MainWindow.cpp: MainWindow.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\qtouchdevice.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qtabwidget.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\qicon.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\QStringListModel \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\qstringlistmodel.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\qabstractitemmodel.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\QListWidget \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qlistwidget.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qlistview.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qabstractitemview.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qabstractscrollarea.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qframe.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\qitemselectionmodel.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qabstractitemdelegate.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qstyleoption.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qabstractspinbox.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\qvalidator.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\qregularexpression.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qslider.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qabstractslider.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qstyle.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qtabbar.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qrubberband.h \
 		ReadSupportFiles\OpenCPN\ReadOpenCPNSupportFiles.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\QObject \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\QApplication \
@@ -566,8 +588,6 @@ debug\moc_MainWindow.cpp: MainWindow.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\QPlainTextEdit \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qplaintextedit.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qtextedit.h \
-		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qabstractscrollarea.h \
-		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qframe.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\qtextdocument.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\qtextoption.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\qtextcursor.h \
@@ -2197,7 +2217,9 @@ debug\S57DrawSymbols.obj: DrawLogic\DrawSymbols\S57DrawSymbols.cpp DrawLogic\Dra
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\QPainter \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\qpainter.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\qtextoption.h \
-		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\qpen.h
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\qpen.h \
+		ReadSupportFiles\S57Support\ReadS57SupportFiles.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\QPolygonF
 
 debug\OpenCPNS57ColorCalibLibrary.obj: ReadSupportFiles\OpenCPN\OpenCPNS57ColorCalibLibrary.cpp ReadSupportFiles\OpenCPN\OpenCPNS57ColorCalibLibrary.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\QObject \
@@ -3721,6 +3743,26 @@ debug\main.obj: main.cpp MainWindow.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\qtouchdevice.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qtabwidget.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\qicon.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\QStringListModel \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\qstringlistmodel.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\qabstractitemmodel.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\QListWidget \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qlistwidget.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qlistview.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qabstractitemview.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qabstractscrollarea.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qframe.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\qitemselectionmodel.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qabstractitemdelegate.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qstyleoption.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qabstractspinbox.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\qvalidator.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\qregularexpression.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qslider.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qabstractslider.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qstyle.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qtabbar.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qrubberband.h \
 		ReadSupportFiles\OpenCPN\ReadOpenCPNSupportFiles.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\QObject \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\QApplication \
@@ -3743,8 +3785,6 @@ debug\main.obj: main.cpp MainWindow.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\QPlainTextEdit \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qplaintextedit.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qtextedit.h \
-		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qabstractscrollarea.h \
-		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qframe.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\qtextdocument.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\qtextoption.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\qtextcursor.h \
@@ -3880,6 +3920,26 @@ debug\MainWindow.obj: MainWindow.cpp MainWindow.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\qtouchdevice.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qtabwidget.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\qicon.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\QStringListModel \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\qstringlistmodel.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\qabstractitemmodel.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\QListWidget \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qlistwidget.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qlistview.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qabstractitemview.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qabstractscrollarea.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qframe.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\qitemselectionmodel.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qabstractitemdelegate.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qstyleoption.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qabstractspinbox.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\qvalidator.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\qregularexpression.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qslider.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qabstractslider.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qstyle.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qtabbar.h \
+		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qrubberband.h \
 		ReadSupportFiles\OpenCPN\ReadOpenCPNSupportFiles.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore\QObject \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\QApplication \
@@ -3902,8 +3962,6 @@ debug\MainWindow.obj: MainWindow.cpp MainWindow.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\QPlainTextEdit \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qplaintextedit.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qtextedit.h \
-		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qabstractscrollarea.h \
-		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets\qframe.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\qtextdocument.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\qtextoption.h \
 		C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui\qtextcursor.h \

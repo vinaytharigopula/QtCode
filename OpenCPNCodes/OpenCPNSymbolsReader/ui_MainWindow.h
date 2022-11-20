@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGridLayout>
+#include <QtWidgets/QListWidget>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QStatusBar>
@@ -25,6 +26,9 @@ public:
     QWidget *centralwidget;
     QGridLayout *gridLayout;
     QWidget *widgetD;
+    QGridLayout *gridLayout_2;
+    QWidget *ShowSymbolWidget;
+    QListWidget *listWidget;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -32,20 +36,33 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(800, 600);
+        MainWindow->resize(1247, 613);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         gridLayout = new QGridLayout(centralwidget);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         widgetD = new QWidget(centralwidget);
         widgetD->setObjectName(QString::fromUtf8("widgetD"));
+        gridLayout_2 = new QGridLayout(widgetD);
+        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
+        ShowSymbolWidget = new QWidget(widgetD);
+        ShowSymbolWidget->setObjectName(QString::fromUtf8("ShowSymbolWidget"));
+
+        gridLayout_2->addWidget(ShowSymbolWidget, 0, 1, 1, 1);
+
 
         gridLayout->addWidget(widgetD, 0, 0, 1, 1);
+
+        listWidget = new QListWidget(centralwidget);
+        listWidget->setObjectName(QString::fromUtf8("listWidget"));
+        listWidget->setMaximumSize(QSize(300, 16777215));
+
+        gridLayout->addWidget(listWidget, 0, 1, 1, 1);
 
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 800, 26));
+        menubar->setGeometry(QRect(0, 0, 1247, 26));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));

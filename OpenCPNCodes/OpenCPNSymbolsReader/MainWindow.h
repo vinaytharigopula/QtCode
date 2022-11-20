@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QStringListModel>
+#include <QListWidget>
 
 #include "ReadSupportFiles/OpenCPN/ReadOpenCPNSupportFiles.h"
 
@@ -24,6 +26,9 @@ public:
 
 private slots:
     void paintEvent(QPaintEvent *event) override;
+    void showListOfSymbolsInList();
+    void on_listWidget_itemClicked(QListWidgetItem *item);
+
 private:
     Ui::MainWindow *ui;
 
@@ -33,6 +38,10 @@ private:
 
     ReadV4S57SupportFiles v4files;
     S57DrawSymbols *drwSymb;
+
+    QMap<QString, SymbolAllData> S57InstrnData;
+
+    QString CurrentSelection;
 
 };
 #endif // MAINWINDOW_H
